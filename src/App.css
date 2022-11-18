@@ -1,3 +1,118 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Nekst-Regular';
+  src: url('./fonts/Nekst-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nekst-Regular';
+  src: url('./fonts/Nekst-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nekst-Regular';
+  src: url('./fonts/Nekst-Regular.woff2') format('woff2');
+}
+
+/* general settings */
 .App {
   text-align: center;
+  background-color: #1e1f28;
+  color: white;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Nekst-Regular;
+}
+
+/* atom classes */
+
+.w-100 {
+  width: 100%;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+:root {
+  --green-main: #07f2b499;
+}
+
+.link-authorization-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-authorization {
+  padding: 10px;
+  font-size: 60px;
+}
+
+.link-authorization:hover {
+  border-bottom: 5px solid var(--green-main);
+}
+
+.auth-page {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.auth-page--header {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 20px 15vw;
+}
+
+.auth-page--tab-links {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ffffff26;
+}
+
+.login-form--remember-me-and-forgot-pass-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.auth-page--languages-list {
+  list-style-type: none;
+}
+
+.auth-page--languages-list > li {
+  padding: 5px 0;
+}
+
+.tab-links--register-wrapper,
+.tab-links--login-wrapper {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  background: none;
+}
+
+.close-btn:hover {
+  cursor: pointer;
 }
