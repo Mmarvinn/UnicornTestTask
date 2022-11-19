@@ -12,7 +12,7 @@ export const AuthPage = () => {
       <div className="auth-page--header">
         <div>
           <Link
-            to="/"
+            to="/UnicornTestTask"
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -73,7 +73,7 @@ export const AuthPage = () => {
                 : {}
             }
           >
-            <Link to="/register/ru">РЕГИСТРАЦИЯ</Link>
+            <Link to="/UnicornTestTask/register/ru">РЕГИСТРАЦИЯ</Link>
           </div>
           <div
             className="tab-links--login-wrapper"
@@ -85,7 +85,7 @@ export const AuthPage = () => {
                 : {}
             }
           >
-            <Link to="/login/ru">АВТОРИЗАЦИЯ</Link>
+            <Link to="/UnicornTestTask/login/ru">АВТОРИЗАЦИЯ</Link>
           </div>
         </div>
         {location.pathname.includes('login/ru') && <LoginForm />}
