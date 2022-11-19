@@ -1,4 +1,9 @@
-# React Project for the React Course
+# My another test task
+
+## How to see the errors ?
+
+1. Do not enter text in any inputs and click 'ВОЙТИ', you will be see some errors.
+2. Type the text: 'error@test' in the any inputs and you`ll be see another errors. This is analog errors from fetching data.
 
 ## Available Scripts
 
@@ -11,11 +16,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
