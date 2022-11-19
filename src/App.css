@@ -16,11 +16,19 @@
 }
 
 /* general settings */
+
 .App {
   text-align: center;
   background-color: #1e1f28;
   color: white;
   min-height: 100vh;
+}
+
+.MuiPopover-paper {
+  box-shadow: none !important;
+  background-color: #1e1f28 !important;
+  /* top: 17px !important;
+  left: 987px !important; */
 }
 
 a {
@@ -47,20 +55,15 @@ a {
   --green-main: #07f2b499;
 }
 
-.link-authorization-wrapper {
-  height: 100vh;
+.page-404 {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  height: 100vh;
+  width: 100%;
   align-items: center;
-}
-
-.link-authorization {
-  padding: 10px;
-  font-size: 60px;
-}
-
-.link-authorization:hover {
-  border-bottom: 5px solid var(--green-main);
+  align-content: center;
 }
 
 .auth-page {
@@ -74,7 +77,7 @@ a {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 20px 15vw;
+  margin: 30px 15vw;
 }
 
 .auth-page--tab-links {
@@ -89,14 +92,6 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
-}
-
-.auth-page--languages-list {
-  list-style-type: none;
-}
-
-.auth-page--languages-list > li {
-  padding: 5px 0;
 }
 
 .tab-links--register-wrapper,
@@ -115,4 +110,11 @@ a {
 
 .close-btn:hover {
   cursor: pointer;
+}
+
+.forgot-password-head-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0 30px 0;
 }

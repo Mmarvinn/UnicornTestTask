@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 
@@ -16,7 +17,8 @@ const style = {
   borderRadius: '4px',
 };
 
-export const ShowModal = ({ onClose, open }) => {
+export const ShowNotificationModal = ({ onClose, open }) => {
+  const { t } = useTranslation();
   return (
     <div>
       <Modal open={open} onClose={onClose}>
@@ -36,7 +38,7 @@ export const ShowModal = ({ onClose, open }) => {
               lineHeight: '1.6',
             }}
           >
-            МЫ ОТПРАВИЛИ ВАМ ПИСЬМО НА ПОЧТУ С ДАЛЬНЕЙШИМИ ИНСТРУКЦИЯМИ
+            {t('we-sand-you-letter')}
           </h2>
         </Box>
       </Modal>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -14,9 +15,11 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Button from '@mui/material/Button';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import { ShowModal } from '../../ShowModal';
+
+import { ForgotPasswordModal } from '../../ForgotPasswordModal';
 
 export const LoginForm = () => {
+  const { t } = useTranslation();
   const [openModal, setOpenModal] = useState(false);
   const [toggleRememberMe, setToggleRememberMe] = useState(false);
   const [toggleEmailBackgroundColor, setToggleEmailBackgroundColor] =
@@ -89,24 +92,22 @@ export const LoginForm = () => {
     e.preventDefault();
     if (values.email === 'error@test') {
       setEmailError(true);
-      setEmailErrorText('Пользователь с данным e-mail не найден');
+      setEmailErrorText(t('user-with-given-e-mail-was-not-found'));
     }
 
     if (values.email.length === 0) {
       setEmailError(true);
-      setEmailErrorText('Ваш e-mail не может быть пустым');
+      setEmailErrorText(t('e-mail-empty'));
     }
 
     if (values.password === 'error@test') {
       setPasswordError(true);
-      setPasswordErrorText(
-        'Неверный пароль, попробуйте снова или выберите «Забыли пароль»'
-      );
+      setPasswordErrorText(t('wrong-password'));
     }
 
     if (values.password.length === 0) {
       setPasswordError(true);
-      setPasswordErrorText('Ваш пароль не может быть пустым');
+      setPasswordErrorText(t('password-empty'));
     }
 
     if (
@@ -141,7 +142,7 @@ export const LoginForm = () => {
           sx={emailTextFieldStyle}
           error={emailError}
           fullWidth
-          label="ВАШ E-MAIL"
+          label={t('your-e-mail')}
           type="email"
           value={values.email}
           onChange={handleChange('email')}
@@ -173,7 +174,7 @@ export const LoginForm = () => {
               }}
               htmlFor="outlined-adornment-password"
             >
-              ПАРОЛЬ
+              {t('password')}
             </InputLabel>
             <OutlinedInput
               sx={passwordTextFieldStyle}
@@ -199,7 +200,7 @@ export const LoginForm = () => {
                   </IconButton>
                 </InputAdornment>
               }
-              label="Password"
+              label={t('password')}
             />
           </FormControl>
           {passwordError && (
@@ -228,14 +229,14 @@ export const LoginForm = () => {
                 }}
               />
             }
-            label="Запомнить меня"
+            label={t('remember-me')}
           />
         </div>
         <Link
           onClick={() => setOpenModal(true)}
           style={{ color: 'var(--green-main)' }}
         >
-          Забыли пароль?
+          {t('forgot-password')}
         </Link>
       </div>
       <Box>
@@ -255,10 +256,13 @@ export const LoginForm = () => {
           }}
           variant="contained"
         >
-          ВОЙТИ
+          {t('enter')}
         </Button>
       </Box>
-      <ShowModal open={openModal} onClose={() => setOpenModal(false)} />
+      <ForgotPasswordModal
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+      />
     </form>
   );
 };

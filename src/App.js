@@ -1,16 +1,19 @@
 import './App.css';
-import { Auth } from './components/modules/auth/Auth';
 import { AuthPage } from './components/modules/auth/AuthPage';
 import { Route, Routes, Navigate } from 'react-router-dom';
+import { NotFound } from './components/NotFound';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route index element={<Navigate to="/UnicornTestTask" replace />} />
-        <Route path="/UnicornTestTask" element={<Auth />} />
-        <Route path="/UnicornTestTask/login/ru" element={<AuthPage />} />
-        <Route path="/UnicornTestTask/register/ru" element={<AuthPage />} />
+        <Route
+          index
+          element={<Navigate to="/UnicornTestTask/login" replace />}
+        />
+        <Route path="/UnicornTestTask/login" element={<AuthPage />} />
+        <Route path="/UnicornTestTask/register" element={<AuthPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

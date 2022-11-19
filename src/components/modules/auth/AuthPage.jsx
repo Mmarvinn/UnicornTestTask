@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import BackArrow from '../../../images/backArrow.svg';
 import { LoginForm } from './LoginForm';
+import { LanguageSelect } from '../../LanguageSelect';
 
 export const AuthPage = () => {
+  const { t } = useTranslation();
   const location = useLocation();
 
   return (
@@ -17,6 +20,7 @@ export const AuthPage = () => {
               display: 'flex',
               alignItems: 'center',
               color: 'var(--green-main)',
+              textTransform: 'uppercase',
             }}
           >
             <img
@@ -24,44 +28,14 @@ export const AuthPage = () => {
               alt="back arrow icon"
               style={{ paddingRight: '10px' }}
             />
-            НАЗАД
+            {t('back')}
           </Link>
         </div>
         <div>
-          <ul className="auth-page--languages-list">
-            <li>
-              <Link
-                to=""
-                style={
-                  location.pathname.endsWith('/ru')
-                    ? {
-                        color: 'var(--green-main)',
-                      }
-                    : {}
-                }
-              >
-                RU
-              </Link>
-            </li>
-            <li>
-              <Link to="">EN</Link>
-            </li>
-            <li>
-              <Link to="">DE</Link>
-            </li>
-            <li>
-              <Link to="">TR</Link>
-            </li>
-            <li>
-              <Link to="">ES</Link>
-            </li>
-            <li>
-              <Link to="">UA</Link>
-            </li>
-          </ul>
+          <LanguageSelect />
         </div>
       </div>
-      <div className="m-0-auto" style={{ width: '460px' }}>
+      <div style={{ width: '460px', margin: '100px auto' }}>
         <div className="auth-page--tab-links">
           <div
             className="tab-links--register-wrapper"
@@ -73,7 +47,12 @@ export const AuthPage = () => {
                 : {}
             }
           >
-            <Link to="/UnicornTestTask/register/ru">РЕГИСТРАЦИЯ</Link>
+            <Link
+              to="/UnicornTestTask/register"
+              style={{ textTransform: 'uppercase' }}
+            >
+              {t('registration')}
+            </Link>
           </div>
           <div
             className="tab-links--login-wrapper"
@@ -85,12 +64,17 @@ export const AuthPage = () => {
                 : {}
             }
           >
-            <Link to="/UnicornTestTask/login/ru">АВТОРИЗАЦИЯ</Link>
+            <Link
+              to="/UnicornTestTask/login"
+              style={{ textTransform: 'uppercase' }}
+            >
+              {t('authorization')}
+            </Link>
           </div>
         </div>
-        {location.pathname.includes('login/ru') && <LoginForm />}
-        {location.pathname.includes('register/ru') && (
-          <h2 style={{ margin: '50px 0' }}>COMING SOON...</h2>
+        {location.pathname.includes('login') && <LoginForm />}
+        {location.pathname.includes('register') && (
+          <h2 style={{ margin: '50px 0' }}>{t('coming-soon')}</h2>
         )}
       </div>
     </div>
