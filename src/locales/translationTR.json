@@ -1,0 +1,22 @@
+{
+  "back": "Geri",
+  "registration": "Kayıt",
+  "authorization": "Yetki",
+  "coming-soon": "Çok yakında...",
+  "user-with-given-e-mail-was-not-found": "Belirtilen e-postaya sahip kullanıcı bulunamadı",
+  "e-mail-empty": "E-postanız boş olamaz",
+  "wrong-password": "Yanlış şifre, tekrar deneyin veya 'Şifremi unuttum' seçeneğini seçin",
+  "password-empty": "Şifreniz boş olamaz",
+  "password": "ŞİFRE",
+  "your-e-mail": "SENİN E-MAIL",
+  "remember-me": "Beni hatırla",
+  "forgot-password": "Parolanızı mı unuttunuz?",
+  "enter": "GİRMEK",
+  "we-sand-you-letter": "EK TALİMATLARI İLE BİRLİKTE SİZE POSTA YOLUYLA BİR MEKTUP GÖNDERDİK",
+  "404 not found": "Hata, sayfa bulunamadı !!!",
+  "error": "ErroR",
+  "go back": "Geri dön...",
+  "go home": "Eve git",
+  "two easy steps": "İki kolay adımda şifrenizi değiştirin",
+  "reset password": "Şifreyi yenile"
+}

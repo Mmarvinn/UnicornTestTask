@@ -1,0 +1,22 @@
+{
+  "back": "Zurück",
+  "registration": "Anmeldung",
+  "authorization": "Genehmigung",
+  "coming-soon": "Demnächst...",
+  "user-with-given-e-mail-was-not-found": "Benutzer mit angegebener E-Mail wurde nicht gefunden",
+  "e-mail-empty": "Ihre E-Mail darf nicht leer sein",
+  "wrong-password": "Falsches Passwort, versuchen Sie es erneut oder wählen Sie 'Passwort vergessen'",
+  "password-empty": "Ihr Passwort darf nicht leer sein",
+  "password": "PASSWORT",
+  "your-e-mail": "DEIN E-MAIL",
+  "remember-me": "Erinnere dich an mich",
+  "forgot-password": "Passwort vergessen?",
+  "enter": "EINTRETEN",
+  "we-sand-you-letter": "WIR SCHICKTEN IHNEN PER POST EINEN BRIEF MIT WEITERE ANLEITUNGEN",
+  "404 not found": "Hoppla, Seite nicht gefunden !!!",
+  "error": "ErroR",
+  "go back": "Geh zurück...",
+  "go home": "Nach Hause gehen",
+  "two easy steps": "Ändern Sie Ihr Passwort in zwei einfachen Schritten",
+  "reset password": "Passwort zurücksetzen"
+}

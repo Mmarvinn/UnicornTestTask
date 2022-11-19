@@ -1,0 +1,22 @@
+{
+  "back": "Назад",
+  "registration": "Реєстрація",
+  "authorization": "Авторизація",
+  "coming-soon": "Скоро буде...",
+  "user-with-given-e-mail-was-not-found": "Користувач з даним e-mail не знайдений",
+  "e-mail-empty": "Ваш e-mail не може бути порожнім",
+  "wrong-password": "Неправильний пароль, попробуйте знову або виберіть 'Забули пароль'",
+  "password-empty": "Ваш пароль не може бути порожнім",
+  "password": "ПАРОЛЬ",
+  "your-e-mail": "ВАШ E-MAIL",
+  "remember-me": "Запам'ятати мене",
+  "forgot-password": "Забули пароль?",
+  "enter": "УВІЙТИ",
+  "we-sand-you-letter": "МИ ВІДПРАВИЛИ ВАМ ЛИСТА НА ЕЛЕКТРОННУ ПОШТУ З ПОДАЛЬШИМИ ІНСТРУКЦІЯМИ",
+  "404 not found": "Ууупс, сторінка не знайдена !!!",
+  "error": "ErroR",
+  "go back": "Назад...",
+  "go home": "На Головну",
+  "two easy steps": "Змініть свій пароль в два простих кроки",
+  "reset password": "Змінити пароль"
+}

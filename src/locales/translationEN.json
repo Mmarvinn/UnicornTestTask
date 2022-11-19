@@ -1,0 +1,22 @@
+{
+  "back": "Back",
+  "registration": "Registration",
+  "authorization": "Authorization",
+  "coming-soon": "Coming-soon...",
+  "user-with-given-e-mail-was-not-found": "User with given e-mail was not found",
+  "e-mail-empty": "Your e-mail cannot be empty",
+  "wrong-password": "Wrong password, try again or select 'Forgot password'",
+  "password-empty": "Your password cannot be empty",
+  "password": "PASSWORD",
+  "your-e-mail": "YOUR E-MAIL",
+  "remember-me": "Remember me",
+  "forgot-password": "Forgot password ?",
+  "enter": "ENTER",
+  "we-sand-you-letter": "WE SENT YOU A LETTER BY MAIL WITH FURTHER INSTRUCTIONS",
+  "404 not found": "Ooops, page not found !!!",
+  "error": "ErroR",
+  "go back": "Go back...",
+  "go home": "Go HOME",
+  "two easy steps": "Change your password in two easy steps",
+  "reset password": "Reset password"
+}

@@ -1,0 +1,22 @@
+{
+  "back": "Atrás",
+  "registration": "Registro",
+  "authorization": "Autorización",
+  "coming-soon": "Próximamente, en breve, pronto...",
+  "user-with-given-e-mail-was-not-found": "No se encontró el usuario con el correo electrónico dado",
+  "e-mail-empty": "Su correo electrónico no puede estar vacío",
+  "wrong-password": "Contraseña incorrecta, intente nuevamente o seleccione 'Olvidé mi contraseña'",
+  "password-empty": "Su contraseña no puede estar vacía",
+  "password": "CLAVE",
+  "your-e-mail": "SU E-MAIL",
+  "remember-me": "Acuérdate de mí",
+  "forgot-password": "Se te olvidó tu contraseña?",
+  "enter": "INGRESAR",
+  "we-sand-you-letter": "LE ENVIAMOS UNA CARTA POR CORREO CON INSTRUCCIONES ADICIONALES",
+  "404 not found": "Ups, página no encontrada !!!",
+  "error": "ErroR",
+  "go back": "Regresa...",
+  "go home": "Vete a casa",
+  "two easy steps": "Cambia tu contraseña en dos sencillos pasos",
+  "reset password": "Restablecer la contraseña"
+}
