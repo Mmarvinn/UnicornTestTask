@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UnicornTestTask/static/css/main.e91ed3d9.css",
-    "main.js": "/UnicornTestTask/static/js/main.38d96c8c.js",
+    "main.js": "/UnicornTestTask/static/js/main.eb828c7c.js",
     "static/media/Nekst-Regular.ttf": "/UnicornTestTask/static/media/Nekst-Regular.ec8e40c2d276f13999f7.ttf",
     "static/media/Nekst-Regular.woff": "/UnicornTestTask/static/media/Nekst-Regular.4d8de93b27c5bd7e1f9b.woff",
     "static/media/Nekst-Regular.woff2": "/UnicornTestTask/static/media/Nekst-Regular.9e71aafe8ea6d32f9b41.woff2",
@@ -10,10 +10,10 @@
     "static/media/close-icon.svg": "/UnicornTestTask/static/media/close-icon.673b3b29946d8703c519207080f3c543.svg",
     "static/media/backArrow.svg": "/UnicornTestTask/static/media/backArrow.ad2e270a247f85a1a8db533ca48651b0.svg",
     "main.e91ed3d9.css.map": "/UnicornTestTask/static/css/main.e91ed3d9.css.map",
-    "main.38d96c8c.js.map": "/UnicornTestTask/static/js/main.38d96c8c.js.map"
+    "main.eb828c7c.js.map": "/UnicornTestTask/static/js/main.eb828c7c.js.map"
   },
   "entrypoints": [
     "static/css/main.e91ed3d9.css",
-    "static/js/main.38d96c8c.js"
+    "static/js/main.eb828c7c.js"
   ]
 }
