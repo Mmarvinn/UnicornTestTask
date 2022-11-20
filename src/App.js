@@ -7,10 +7,6 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route
-          index
-          element={<Navigate to="/UnicornTestTask/login" replace />}
-        />
         <Route path="/UnicornTestTask/login" element={<AuthPage />} />
         <Route path="/UnicornTestTask/register" element={<AuthPage />} />
         <Route path="*" element={<NotFound />} />
