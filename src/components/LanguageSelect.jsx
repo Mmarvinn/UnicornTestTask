@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import MenuItem from '@mui/material/MenuItem';
@@ -6,7 +6,9 @@ import Select from '@mui/material/Select';
 
 export const LanguageSelect = () => {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState(localStorage.getItem('i18nextLng'));
+  const [language, setLanguage] = useState(
+    localStorage.getItem('i18nextLng') || 'en'
+  );
   const [open, setOpen] = useState(false);
 
   const menuItemStyle = {
@@ -31,6 +33,13 @@ export const LanguageSelect = () => {
     es: 'ES',
     ua: 'UA',
   };
+
+  useEffect(() => {
+    if (!Object.keys(allLanguages).includes(language)) {
+      setLanguage('en');
+      i18n.changeLanguage('en');
+    }
+  }, []);
 
   return (
     <Select

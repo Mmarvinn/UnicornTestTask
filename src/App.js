@@ -1,6 +1,6 @@
 import './App.css';
 import { AuthPage } from './components/modules/auth/AuthPage';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { NotFound } from './components/NotFound';
 
 function App() {
