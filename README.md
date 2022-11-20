@@ -1,8 +1,10 @@
 # My another test task
 
+### Start page of this APP is '404 page' (this is a test to see page 404, because we haven`t main page in this APP). Click 'go HOME' to see the APP.
+
 ## How to see the errors ?
 
-1. Do not enter text in any inputs and click 'ВОЙТИ', you will be see some errors.
+1. Do not enter text in any inputs and click 'ENTER', you will be see some errors.
 2. Type the text: 'error@test' in the any inputs and you`ll be see another errors. This is analog errors from fetching data.
 
 ## Available Scripts
