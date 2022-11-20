@@ -1,6 +1,6 @@
 # My another test task
 
-### Start page of this APP is '404 page' (this is a test to see page 404, because we haven`t main page in this APP). Click 'go HOME' to see the APP.
+### Start page of this APP is '404 page' (this is a test to see page 404, because we haven't main page in this APP). Click `go HOME` to see the APP. And I can't deploy project to GP with different pathname (like this `.../UnicornTestTask/login`) which not the same as the pathname of my repo.
 
 ## How to see the errors ?
 
