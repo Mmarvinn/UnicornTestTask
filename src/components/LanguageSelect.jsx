@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 export const LanguageSelect = () => {
@@ -34,36 +33,32 @@ export const LanguageSelect = () => {
   };
 
   return (
-    <FormControl size="small">
-      <Select
-        variant="standard"
-        disableUnderline
-        sx={{
-          border: 'none',
-          color: 'var(--green-main)',
-          '& .MuiSelect-icon': {
-            display: 'none',
-          },
-        }}
-        value={language}
-        onChange={handleChange}
-        open={open}
-        onPointerOver={() => setOpen(true)}
-        // onPointerOut={() => setOpen(false)}
-        onClose={() => setOpen(false)}
-      >
-        {Object.keys(allLanguages).map((lng) => (
-          <MenuItem
-            value={lng}
-            onClick={() => i18n.changeLanguage(lng)}
-            sx={menuItemStyle}
-            style={language === lng ? { color: 'var(--green-main)' } : {}}
-            key={lng}
-          >
-            {allLanguages[lng]}
-          </MenuItem>
-        ))}
-      </Select>
-    </FormControl>
+    <Select
+      variant="standard"
+      disableUnderline
+      sx={{
+        color: 'var(--green-main)',
+        '& .MuiSelect-icon': {
+          display: 'none',
+        },
+      }}
+      value={language}
+      onChange={handleChange}
+      open={open}
+      onPointerEnter={() => setOpen(true)}
+      onClose={() => setOpen(false)}
+    >
+      {Object.keys(allLanguages).map((lng) => (
+        <MenuItem
+          value={lng}
+          onClick={() => i18n.changeLanguage(lng)}
+          sx={menuItemStyle}
+          style={language === lng ? { color: 'var(--green-main)' } : {}}
+          key={lng}
+        >
+          {allLanguages[lng]}
+        </MenuItem>
+      ))}
+    </Select>
   );
 };

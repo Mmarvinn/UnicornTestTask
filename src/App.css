@@ -27,8 +27,7 @@
 .MuiPopover-paper {
   box-shadow: none !important;
   background-color: #1e1f28 !important;
-  /* top: 17px !important;
-  left: 987px !important; */
+  margin: -41px 10px 0 -12px !important;
 }
 
 a {
